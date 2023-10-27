@@ -73,7 +73,7 @@ db.once("open", () => {
 app.use(morgan("dev"));
 app.use(express.json());
 var corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 'http://localhost:5173',
   optionsSuccessStatus: 200
 }
 app.use(cors(corsOptions));

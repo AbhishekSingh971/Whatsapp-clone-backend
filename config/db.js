@@ -5,7 +5,7 @@ dotenv.config();
 
 const url =
   process.env.CONNECTION_STRING ||
-  "mongodb+srv://abhiW:abhiW@whatsapp-clone.kb6q3ya.mongodb.net";
+  "mongodb+srv://m001-student:abhi@sandbox.1tynyfo.mongodb.net/Whatsapp-clone";
 
 const connectDB = async () => {
   try {

@@ -6,7 +6,7 @@ import connectDB from "./config/db.js";
 import router from "./routes/message.js";
 import Pusher from "pusher";
 import cors from "cors";
-import path from 'path'
+// import path from 'path'
 
 //configure env
 dotenv.config();
@@ -87,7 +87,7 @@ app.use((req, res, next) => {
 //api routes
 
 //REST api
-app.use('*',function(req,res){
+app.use('/',function(req,res){
   // res.sendFile(path.join(__dirname, '../build/index.html'));
   res.send("hello");
 });

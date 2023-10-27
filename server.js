@@ -73,7 +73,7 @@ db.once("open", () => {
 app.use(morgan("dev"));
 app.use(express.json());
 var corsOptions = {
-  origin: '*',
+  origin: 'http://localhost:3000',
   optionsSuccessStatus: 200
 }
 app.use(cors(corsOptions));
@@ -87,10 +87,10 @@ app.use((req, res, next) => {
 //api routes
 
 //REST api
-app.use('/',function(req,res){
+// app.use('/',function(req,res){
   // res.sendFile(path.join(__dirname, '../build/index.html'));
-  res.send("hello");
-});
+  // res.send("hello");
+// });
 
 app.use("/api/v1", router);
 

@@ -73,7 +73,7 @@ db.once("open", () => {
 app.use(morgan("dev"));
 app.use(express.json());
 var corsOptions = {
-  origin: 'https://653c2bbd60ffbc25a7148c45--delicate-buttercream-18e55e.netlify.app',
+  origin: 'https://delicate-buttercream-18e55e.netlify.app',
   optionsSuccessStatus: 200
 }
 app.use(cors(corsOptions));
